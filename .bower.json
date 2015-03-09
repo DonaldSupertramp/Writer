@@ -1,0 +1,38 @@
+{
+  "name": "spa-seed",
+  "version": "0.0.1",
+  "authors": [
+    "<donald.supertramp@gmail.com>"
+  ],
+  "description": "Bootstrapping a web-component based SPA with Polymer",
+  "keywords": [
+    "Web-Component",
+    "SPA",
+    "Polymer",
+    "seed"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4",
+    "traceur": "*",
+    "app-router": "~2.4.0"
+  },
+  "homepage": "https://github.com/DonaldSupertramp/spa-seed",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "2753a02427c86ee709a871d0153c5c0222b98056"
+  },
+  "_source": "git://github.com/DonaldSupertramp/spa-seed.git",
+  "_target": "~0.0.1",
+  "_originalSource": "polymer-spa-seed",
+  "_direct": true
+}

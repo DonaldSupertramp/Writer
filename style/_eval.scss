@@ -1,0 +1,31 @@
+@import "colors";
+@import "fonts";
+
+html /deep/ .section-title{
+  margin-top: 0 !important;
+  font-weight: normal;
+  font-size: 32px;
+  font-family: "Oswald";
+}
+
+html /deep/ .data-entry{
+  width: 75%;
+  margin: 15px 0;
+}
+
+html /deep/ .data-title{
+  display: block;
+  font-size: 12px;
+  color: #222222;
+  padding: 3px 0;
+}
+
+html /deep/ .data-value{
+  display: block;
+  padding: 4px;
+  text-align: right;
+  font-family: monospace;
+  background: $blue;
+  min-width: 1.5em;
+
+}

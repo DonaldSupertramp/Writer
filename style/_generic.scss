@@ -1,0 +1,72 @@
+*{
+
+  &,
+  &:before,
+  &:after{
+    @include vendor(box-sizing, border-box);
+  }
+
+}
+
+html /deep/ *{
+
+  &,
+  &:before,
+  &:after{
+    @include vendor(box-sizing, border-box);
+  }
+
+}
+
+html{
+  font: 15.5px Helvetica, arial, freesans, clean, sans-serif;
+  height: 100%;
+  overflow-y:scroll;
+
+}
+
+body {
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 100%;
+  position: relative;
+  background: #f4f4f4;
+
+}
+
+a, html /deep/ a{
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+
+.wrapper{
+
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5, html /deep/ h1,html /deep/ h2,html /deep/ h3,html /deep/ h4,html /deep/ h5{
+
+}
+
+html /deep/ .page-title{
+  margin-top: 10px;
+  font-size: 26px;
+  color: #222222;
+}
+
+.show-false,.hide-true{
+  display: none;
+}
+
+html /deep/ .show-false, html /deep/ .hide-true{
+  display: none;
+}
+

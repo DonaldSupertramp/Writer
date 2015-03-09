@@ -1,0 +1,22 @@
+
+.textarea{
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  background: transparent;
+  resize: horizontal;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.165;
+  display: block;
+  min-width: 25%;
+  width: 75%;
+  height: 95%;
+  border: none;
+  outline: none;
+  overflow: scroll;
+}
+
+.content{
+  color: #989898;
+}

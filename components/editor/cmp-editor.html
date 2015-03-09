@@ -1,0 +1,23 @@
+<polymer-element name="cmp-editor">
+
+    <template>
+
+        <link type="text/css" rel="stylesheet" href="cmp-editor.css">
+
+        <div class="editor">
+            <div id="textarea">
+                <div class="content">
+                    <template repeat="{{sentence in content}}">
+                        <span class="sentence" contenteditable="{{sentence.focused}}">{{sentence.content}}</span>
+                    </template>
+                </div>
+                <textarea class="textarea"  autofocus="true" id="current" tabindex="0"></textarea>
+            </div>
+        </div>
+
+
+    </template>
+
+    <script src="cmp-editor.js"></script>
+
+</polymer-element>
