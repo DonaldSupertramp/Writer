@@ -1,7 +1,13 @@
-.textarea {
+.editor {
   position: absolute;
   top: 2.5%;
   left: 2.5%;
+  height: 95%;
+  width: 95%;
+  outline: none;
+  border: none; }
+
+.textarea {
   background: transparent;
   resize: horizontal;
   font-family: monospace;
@@ -15,7 +21,7 @@
   outline: none;
   overflow: scroll; }
 
-.content {
+.content, .nonfocus {
   color: #989898; }
 
 /*# sourceMappingURL=cmp-editor.css.map */

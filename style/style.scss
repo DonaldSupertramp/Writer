@@ -6,3 +6,22 @@
 
 @import "eval";
 
+
+.editor{
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  height: 95%;
+  width: 95%;
+  outline: none;
+  border: none;
+
+  div{
+
+    color: #ccc;
+
+    &:last-child{
+      color: #000;
+    }
+  }
+}

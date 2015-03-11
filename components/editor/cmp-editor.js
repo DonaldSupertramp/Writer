@@ -4,6 +4,8 @@ var element = (function(){
 
     var component;
 
+    var EditorService;
+
     return{
 
        ready: function(){
@@ -11,22 +13,20 @@ var element = (function(){
            var self = this;
            component = this;
 
-           self.$.textarea.addEventListener('keydown',function(e){
+           System.import('components/editor/EditorService.js')
+           .then(function(M){
+                    EditorService = M.service;
+                    EditorService.setEditorInstance(self.$.editor);
+               });
 
-                if(e.keyCode == 13){
 
-                    self.content.push({
-                        focused: false,
-                        content: self.$.current.value
-                    });
-                }
+           self.$.editor.addEventListener('keyup',function(e){
+
+               //if(e.keyCode == 13) e.preventDefault();
+
+               EditorService.handleKeyUp(e);
 
            });
-
-           self.$.current.focus();
-
-           self.content = [];
-
        }
     }
 
