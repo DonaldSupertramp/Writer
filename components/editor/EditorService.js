@@ -32,30 +32,16 @@ var service = (function(){
 
         if(e.keyCode == 13) return;
 
-        var sentences = editorInstance.innerText.split('. ');
+        var index = editorInstance.innerHTML.lastIndexOf('. ') == -1 ? editorInstance.innerHTML.lastIndexOf('<br>') + 4 :  editorInstance.innerHTML.lastIndexOf('. ') + 2;
 
-        sentences.forEach(function(s,i,arr){
+        if(index <=5) return;
 
-            if(i == arr.length - 1) return;
+        var unfocused = editorInstance.innerHTML.substring(0,index);
+        var focused = editorInstance.innerHTML.substring(index);
 
-            s = '<span class="nonfocus">' + s + '. </span>';
+        editorInstance.innerHTML = editorInstance.innerHTML.replace(unfocused,'<div class="unfocused">'+unfocused+'</div>');
 
-            arr[i] = s;
-
-        });
-
-        if(sentences.length > 1){
-
-            editorInstance.innerHTML = '';
-
-            sentences.forEach(function(s,i,arr){
-                cursorManager.setEndOfContenteditable(editorInstance);
-                editorInstance.innerHTML += s;
-            });
-
-        }
         cursorManager.setEndOfContenteditable(editorInstance);
-        console.dir(sentences);
     }
 
     return{
