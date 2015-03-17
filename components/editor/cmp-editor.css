@@ -7,7 +7,9 @@
   outline: none;
   border: none;
   font-family: monospace;
-  font-size: 16px; }
+  font-size: 18px;
+  line-height: 1.366;
+  color: #2f2f2f; }
 
 .textarea {
   background: transparent;
@@ -26,5 +28,19 @@
 .content, .unfocused {
   display: inline;
   color: #989898; }
+
+.modeindicator {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: #ef4e33; }
+  .modeindicator.active-true {
+    background: #7def92; }
+
+.hl {
+  color: #2236ef; }
 
 /*# sourceMappingURL=cmp-editor.css.map */

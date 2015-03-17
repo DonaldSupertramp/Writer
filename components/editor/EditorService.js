@@ -2,52 +2,325 @@ var service = (function(){
 
     var editorInstance;
 
-    function parseInput(i){
+    var editMode = false;
 
-        var result;
-
-        switch(i.keyCode){
-            case 32:
-                result = ' ';
-                break;
-            case 13:
-                result = '\n';
-                break;
-            default:
-                result = i.shiftKey ? String.fromCharCode(i.keyCode) : String.fromCharCode(i.keyCode).toLowerCase();
-        }
-
-        return result;
-
+    function loadJSON(path, success, error)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function()
+        {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    if (success)
+                        success(JSON.parse(xhr.responseText));
+                } else {
+                    if (error)
+                        error(xhr);
+                }
+            }
+        };
+        xhr.open("GET", path, true);
+        xhr.send();
     }
 
     function setEditorInstance(instance){
         editorInstance = instance;
-        editorInstance.addEventListener('keydown',function(){
-           // cursorManager.setEndOfContenteditable(editorInstance);
+        editorInstance.addEventListener('click',function(){
+            function getCaretCharacterOffsetWithin(element) {
+                var caretOffset = 0;
+                var doc = element.ownerDocument || element.document;
+                var win = doc.defaultView || doc.parentWindow;
+                var sel;
+                if (typeof win.getSelection != "undefined") {
+                    sel = win.getSelection();
+                    if (sel.rangeCount > 0) {
+                        var range = win.getSelection().getRangeAt(0);
+                        var preCaretRange = range.cloneRange();
+                        preCaretRange.selectNodeContents(element);
+                        preCaretRange.setEnd(range.endContainer, range.endOffset);
+                        caretOffset = preCaretRange.toString().length;
+                    }
+                } else if ( (sel = doc.selection) && sel.type != "Control") {
+                    var textRange = sel.createRange();
+                    var preCaretTextRange = doc.body.createTextRange();
+                    preCaretTextRange.moveToElementText(element);
+                    preCaretTextRange.setEndPoint("EndToEnd", textRange);
+                    caretOffset = preCaretTextRange.text.length;
+                }
+                return caretOffset;
+            }
         });
     }
 
-    function handleKeyUp(e){
+    function resetHighlight(){
+        var regEx1 = new RegExp('<span class="hl">','gi');
+        var regEx2 = new RegExp('</span>','gi');
 
-        if(e.keyCode == 13) return;
+        editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx1,'');
+        editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx2,'');
+    }
 
-        var index = editorInstance.innerHTML.lastIndexOf('. ') == -1 ? editorInstance.innerHTML.lastIndexOf('<br>') + 4 :  editorInstance.innerHTML.lastIndexOf('. ') + 2;
+    function toggleHighlightmode(e){
 
-        if(index <=5) return;
+        if(!e.altKey) return;
 
-        var unfocused = editorInstance.innerHTML.substring(0,index);
-        var focused = editorInstance.innerHTML.substring(index);
+        var words = editorInstance.innerText.split(' ');
 
-        editorInstance.innerHTML = editorInstance.innerHTML.replace(unfocused,'<div class="unfocused">'+unfocused+'</div>');
+        resetHighlight();
 
-        cursorManager.setEndOfContenteditable(editorInstance);
+        switch(e.keyCode){
+
+            case 86:
+
+                var verbs = [];
+
+                loadJSON('verbs.json',
+                    function(data) {
+
+                        var keys = Object.keys(data);
+
+                        words.forEach(function(word){
+
+                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+
+                            keys.some(function(key){
+
+                                var found;
+
+                                for(var prop in data[key]) {
+                                    if(data[key][prop] == word){
+                                        found = true;
+                                        if(verbs.indexOf(word) == -1) verbs.push(word);
+                                    }
+                                }
+                                return found;
+
+                            });
+
+                        });
+
+                        verbs.forEach(function(it){
+
+                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+                            console.log(regEx);
+
+                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                        });
+
+                    }
+                );
+                break;
+
+            case 78:
+                var nouns = [];
+
+                loadJSON('nouns.json',
+                    function(data) {
+
+                        var keys = Object.keys(data);
+
+                        words.forEach(function(word){
+
+                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+
+                            keys.some(function(key){
+
+                                var found;
+
+                                for(var prop in data[key]) {
+                                    if(data[key][prop] == word){
+                                        found = true;
+                                        if(nouns.indexOf(word) == -1) nouns.push(word);
+                                    }
+                                }
+                                return found;
+
+                            });
+
+                        });
+
+                        nouns.forEach(function(it){
+
+                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+
+                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                        });
+
+                    }
+                );
+
+                break;
+
+            case 65:
+                var adverbs = [];
+
+                loadJSON('adverbs.json',
+                    function(data) {
+
+                        var keys = Object.keys(data);
+
+                        words.forEach(function(word){
+
+                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+
+                            keys.some(function(key){
+
+                                var found;
+
+                                for(var prop in data[key]) {
+                                    if(data[key][prop] == word){
+                                        found = true;
+                                        if(adverbs.indexOf(word) == -1) adverbs.push(word);
+                                    }
+                                }
+                                return found;
+
+                            });
+
+                        });
+
+                        adverbs.forEach(function(it){
+
+                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+
+                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                        });
+
+                    }
+                );
+
+                break;
+
+
+            case 80:
+                var preps = [];
+
+                loadJSON('prepositions.json',
+                    function(data) {
+
+                        var keys = Object.keys(data);
+
+                        words.forEach(function(word){
+
+                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+
+                            keys.some(function(key){
+
+                                var found;
+
+                                for(var prop in data[key]) {
+                                    if(data[key][prop] == word){
+                                        found = true;
+                                        if(preps.indexOf(word) == -1) preps.push(word);
+                                    }
+                                }
+                                return found;
+
+                            });
+
+                        });
+
+                        preps.forEach(function(it){
+
+                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+
+                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                        });
+
+                    }
+                );
+
+                break;
+
+
+            case 74:
+                var adjectives = [];
+
+                loadJSON('adjectives.json',
+                    function(data) {
+
+                        var keys = Object.keys(data);
+
+                        words.forEach(function(word){
+
+                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+
+                            keys.some(function(key){
+
+                                var found;
+
+                                for(var prop in data[key]) {
+                                    if(data[key][prop] == word){
+                                        found = true;
+                                        if(adjectives.indexOf(word) == -1) adjectives.push(word);
+                                    }
+                                }
+                                return found;
+
+                            });
+
+                        });
+
+                        adjectives.forEach(function(it){
+
+                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+
+                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                        });
+
+                    }
+                );
+
+                break;
+
+
+            case 75:
+                var conjunctions = [];
+
+                loadJSON('nouns.json',
+                    function(data) {
+
+                        var keys = Object.keys(data);
+
+                        words.forEach(function(word){
+
+                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+
+                            keys.some(function(key){
+
+                                var found;
+
+                                for(var prop in data[key]) {
+                                    if(data[key][prop] == word){
+                                        found = true;
+                                        if(conjunctions.indexOf(word) == -1) conjunctions.push(word);
+                                    }
+                                }
+                                return found;
+
+                            });
+
+                        });
+
+                        conjunctions.forEach(function(it){
+
+                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+
+                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                        });
+
+                    }
+                );
+
+                break;
+
+        }
+
     }
 
     return{
-        parseInput: parseInput,
-        setEditorInstance: setEditorInstance,
-        handleKeyUp: handleKeyUp
+        toggleHightlightmode: toggleHighlightmode,
+        setEditorInstance: setEditorInstance
     }
 
 

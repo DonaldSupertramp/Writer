@@ -20,13 +20,10 @@ var element = (function(){
                });
 
 
-           self.$.editor.addEventListener('keyup',function(e){
-
-               //if(e.keyCode == 13) e.preventDefault();
-
-               EditorService.handleKeyUp(e);
-
+           self.$.editor.addEventListener('keydown',function(e){
+               EditorService.toggleHightlightmode(e);
            });
+
        }
     }
 

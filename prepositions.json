@@ -1,0 +1,750 @@
+[
+  {
+    "origin": "-übergreifend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ab",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ab",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ad",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "alla",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "an",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "an",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "an",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "an",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "anstatt",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "an",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "an",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "apropos",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "apropos",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "auf",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "auf",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "auf",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "auf",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "auf",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "aus",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "aus",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ausgangs",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "aus",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "aus",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "außer",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bei",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bei",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "beim",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "beim",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "beinahe",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bei",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "beinhaltend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bei",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bei",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bei",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "benachbart",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "benachbart",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "benachbart",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffs",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffs",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "betreffs",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bezüglich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bis",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bis",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bis",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "bis",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "contra",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "durch",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "durch",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "durch",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "durch",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "entgegen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "entlang",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "entsprechend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "entsprechend",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "für",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "für",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "für",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ganz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "hinter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "in",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "inbegriffen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "in",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "in",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "in",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "kontra",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "links",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "längs",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "Minasragrit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "minus",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "mit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "mit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "mit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "mit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "mit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "mit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nach",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nahe",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nahe",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "nahezu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "neben",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "neben",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "neben",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "neben",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "neben",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "neben",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "ober",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "seit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "statt",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "trotz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "trotz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "trotz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "trotz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "trotz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "trotz",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "um",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "um",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unter",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "unweit",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "via",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "von",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "von",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "von",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "von",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "vor",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "vor",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "vor",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "vor",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "vor",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "weniger",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "wider",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "während",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zufolge",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zulasten",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zusätzlich",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zu",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "zwischen",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "à",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "à",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  },
+  {
+    "origin": "über",
+    "wordClass": "prep"
+  }
+]

@@ -1,0 +1,610 @@
+[
+  {
+    "origin": "aber",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "allerdings",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "als",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "ausgenommen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "außer",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "außer",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "bevor",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "bevor",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "bevor",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "bevor",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "beziehungsweise",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "bis",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "damit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "damit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "damit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "damit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "darum",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "dass",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "dass",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "demzufolge",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "denn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "denn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "denn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "denn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "denn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "denn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "derweil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "derweil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "deshalb",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "ehe",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "ehe",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "entweder",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "falls",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "falls",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "falls",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "falls",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "falls",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "hingegen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "hingegen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "indem",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "indessen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "insofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "insofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "insoweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "nachdem",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "nachdem",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "noch",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "nämlich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obgleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "ob",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "ob",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "obwohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "seitdem",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sobald",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sobald",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sobald",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sobald",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sobald",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sodass",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sodass",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sofern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "solang",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "solange",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "solange",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "solange",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "solange",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "somit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sondern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sondern",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sonst",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sooft",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sosehr",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "soweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "soweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "soweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "soweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "soweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "soweit",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "sowohl",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "und",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "vorausgesetzt",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weder",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weil",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wenngleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wenngleich",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wenn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wenn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wenn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wenn",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "weswegen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wie",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wohingegen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "wohingegen",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "woraufhin",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "worauf",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "während",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "während",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "während",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "während",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  },
+  {
+    "origin": "zumal",
+    "wordClass": "conj"
+  }
+]
