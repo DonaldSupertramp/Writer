@@ -81,6 +81,8 @@ var service = (function(){
 
                         words.forEach(function(word){
 
+                            word = word.trim();
+
                             if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
 
                             keys.some(function(key){
@@ -119,6 +121,8 @@ var service = (function(){
 
                         var keys = Object.keys(data);
 
+                        console.dir(data[0]);
+
                         words.forEach(function(word){
 
                             if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
@@ -127,12 +131,11 @@ var service = (function(){
 
                                 var found;
 
-                                for(var prop in data[key]) {
-                                    if(data[key][prop] == word){
-                                        found = true;
-                                        if(nouns.indexOf(word) == -1) nouns.push(word);
-                                    }
+                                if(data[key] == word){
+                                    found = true;
+                                    if(nouns.indexOf(word) == -1) nouns.push(word);
                                 }
+
                                 return found;
 
                             });
@@ -279,6 +282,8 @@ var service = (function(){
 
                 loadJSON('nouns.json',
                     function(data) {
+
+                        console.dir(typeof data);
 
                         var keys = Object.keys(data);
 
