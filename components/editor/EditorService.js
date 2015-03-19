@@ -68,23 +68,44 @@ var service = (function(){
 
         resetHighlight();
 
-        switch(e.keyCode){
+        function checkMatches(target){
 
-            case 86:
+            var matches = [];
+console.log(target);
+            loadJSON(target + '.json',
+                function(data) {
 
-                var verbs = [];
+                    var keys = Object.keys(data);
 
-                loadJSON('verbs.json',
-                    function(data) {
+                    words.forEach(function(word){
 
-                        var keys = Object.keys(data);
+                        word = word.trim();
 
-                        words.forEach(function(word){
+                        if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
 
-                            word = word.trim();
+                        if(target == 'nounsnew'){
 
-                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+                            data = data[0];
 
+                            console.dir(data['X']);
+                            console.dir(data['G']);
+                            debugger;
+
+                            data[word[0].toUpperCase()].some(function(key){
+
+                                var found;
+
+                                if(word == key){
+                                    found = true;
+                                    if(matches.indexOf(word) == -1) matches.push(word);
+                                }
+
+                                return found;
+                            });
+
+                        }
+
+                        else if(target == 'verbs'){
                             keys.some(function(key){
 
                                 var found;
@@ -92,40 +113,14 @@ var service = (function(){
                                 for(var prop in data[key]) {
                                     if(data[key][prop] == word){
                                         found = true;
-                                        if(verbs.indexOf(word) == -1) verbs.push(word);
+                                        if(matches.indexOf(word) == -1) matches.push(word);
                                     }
                                 }
                                 return found;
 
                             });
-
-                        });
-
-                        verbs.forEach(function(it){
-
-                            var regEx = new RegExp('\\b' +it+'\\b','gi');
-                            console.log(regEx);
-
-                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
-                        });
-
-                    }
-                );
-                break;
-
-            case 78:
-                var nouns = [];
-
-                loadJSON('nouns.json',
-                    function(data) {
-
-                        var keys = Object.keys(data);
-
-                        console.dir(data[0]);
-
-                        words.forEach(function(word){
-
-                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
+                        }
+                        else{
 
                             keys.some(function(key){
 
@@ -133,189 +128,66 @@ var service = (function(){
 
                                 if(data[key] == word){
                                     found = true;
-                                    if(nouns.indexOf(word) == -1) nouns.push(word);
+                                    if(matches.indexOf(word) == -1) matches.push(word);
                                 }
 
                                 return found;
 
                             });
+                        }
 
-                        });
 
-                        nouns.forEach(function(it){
+                    });
 
-                            var regEx = new RegExp('\\b' +it+'\\b','gi');
+                    matches.forEach(function(it){
 
-                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
-                        });
+                        var regEx = new RegExp('\\b' +it+'\\b','gi');
 
-                    }
-                );
+                        editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
+                    });
+
+                }
+            );
+        }
+
+        switch(e.keyCode){
+
+            case 86:
+
+                checkMatches('verbs');
+
+                break;
+
+            case 78:
+
+                checkMatches('nounsnew');
 
                 break;
 
             case 65:
-                var adverbs = [];
 
-                loadJSON('adverbs.json',
-                    function(data) {
-
-                        var keys = Object.keys(data);
-
-                        words.forEach(function(word){
-
-                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
-
-                            keys.some(function(key){
-
-                                var found;
-
-                                for(var prop in data[key]) {
-                                    if(data[key][prop] == word){
-                                        found = true;
-                                        if(adverbs.indexOf(word) == -1) adverbs.push(word);
-                                    }
-                                }
-                                return found;
-
-                            });
-
-                        });
-
-                        adverbs.forEach(function(it){
-
-                            var regEx = new RegExp('\\b' +it+'\\b','gi');
-
-                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
-                        });
-
-                    }
-                );
+                checkMatches('adverbs');
 
                 break;
 
 
             case 80:
-                var preps = [];
 
-                loadJSON('prepositions.json',
-                    function(data) {
-
-                        var keys = Object.keys(data);
-
-                        words.forEach(function(word){
-
-                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
-
-                            keys.some(function(key){
-
-                                var found;
-
-                                for(var prop in data[key]) {
-                                    if(data[key][prop] == word){
-                                        found = true;
-                                        if(preps.indexOf(word) == -1) preps.push(word);
-                                    }
-                                }
-                                return found;
-
-                            });
-
-                        });
-
-                        preps.forEach(function(it){
-
-                            var regEx = new RegExp('\\b' +it+'\\b','gi');
-
-                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
-                        });
-
-                    }
-                );
+                checkMatches('prepositions');
 
                 break;
 
 
             case 74:
-                var adjectives = [];
 
-                loadJSON('adjectives.json',
-                    function(data) {
-
-                        var keys = Object.keys(data);
-
-                        words.forEach(function(word){
-
-                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
-
-                            keys.some(function(key){
-
-                                var found;
-
-                                for(var prop in data[key]) {
-                                    if(data[key][prop] == word){
-                                        found = true;
-                                        if(adjectives.indexOf(word) == -1) adjectives.push(word);
-                                    }
-                                }
-                                return found;
-
-                            });
-
-                        });
-
-                        adjectives.forEach(function(it){
-
-                            var regEx = new RegExp('\\b' +it+'\\b','gi');
-
-                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
-                        });
-
-                    }
-                );
+                checkMatches('adjectives');
 
                 break;
 
 
             case 75:
-                var conjunctions = [];
 
-                loadJSON('nouns.json',
-                    function(data) {
-
-                        console.dir(typeof data);
-
-                        var keys = Object.keys(data);
-
-                        words.forEach(function(word){
-
-                            if(word.substr(-1) == ',' || word.substr(-1) == '.' || word.substr(-1) == ';' || word.substr(-1) == ':') word = word.substring(0,word.length-1);
-
-                            keys.some(function(key){
-
-                                var found;
-
-                                for(var prop in data[key]) {
-                                    if(data[key][prop] == word){
-                                        found = true;
-                                        if(conjunctions.indexOf(word) == -1) conjunctions.push(word);
-                                    }
-                                }
-                                return found;
-
-                            });
-
-                        });
-
-                        conjunctions.forEach(function(it){
-
-                            var regEx = new RegExp('\\b' +it+'\\b','gi');
-
-                            editorInstance.innerHTML = editorInstance.innerHTML.replace(regEx,'<span class="hl">'+it+'</span>');
-                        });
-
-                    }
-                );
+                checkMatches('conjunctions');
 
                 break;
 
