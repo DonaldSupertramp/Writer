@@ -4,9 +4,18 @@
 
         <link type="text/css" rel="stylesheet" href="cmp-editor.css">
 
+        <div class="hl-container">
+            <template repeat="{{opt in options}}">
+                <span class="hl-opt" data-target="{{opt}}" on-click="{{highlight}}">{{opt}}</span>
+            </template>
+        </div>
+
         <div class="editor" id="editor" tabindex="0" contenteditable="true">
 
         </div>
+
+        <span class="readingtime">{{readingtime}}</span>
+        <span class="wordcount">{{wordcount}}</span>
 
     </template>
 
